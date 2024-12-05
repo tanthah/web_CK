@@ -1,0 +1,105 @@
+.container {
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            margin: 0 auto;
+            padding: 100px 20px;
+            height: auto;
+            
+        }
+
+        .dish {
+            border: 1px solid #ddd;
+            margin: 20px 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .dish:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .dish-details {
+            display: flex;
+            gap: 20px;
+        }
+
+        .dish-image {
+            flex: 0 0 200px;
+        }
+
+        .dish-img {
+            max-width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .dish-info {
+            height: auto;
+            flex: 1;
+            margin-left: -40px;
+            background-color: #e4e0e0;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        .dish-info strong {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .dish-info p {
+            margin: 5px 0;
+            width: 180px;
+            height: auto; /* Chiều cao tự động mở rộng */
+            word-wrap: break-word; /* Tự động xuống dòng khi từ quá dài */
+            white-space: normal; /* Cho phép xuống dòng ở vị trí hợp lý */
+            color: #555; /* Màu chữ */
+            font-size: 16px; /* Kích thước chữ */
+            line-height: 1.5; /* Khoảng cách giữa các dòng */
+            padding-left: 10px;
+        }
+
+        .dish-info span {
+            color: #e44d26;
+            font-weight: bold;
+        }
+        
+        .debug-info {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .them:hover{
+            background-color: #bcbbbb;
+            border-radius: 3px;
+        }
+        
+        
+        
+        
+        .notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a7eba7; /* Màu nền cho thông báo (có thể tùy chỉnh) */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    z-index: 1000; /* Đảm bảo nằm trên mọi thành phần khác */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo đổ bóng */
+    transition: opacity 0.5s ease; /* Hiệu ứng mờ dần */
+}
+
+.notification h3 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}

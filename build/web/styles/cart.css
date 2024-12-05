@@ -1,0 +1,80 @@
+        
+        .container_cart{
+            display: flex;
+            justify-content: space-around;
+        }
+        .cart-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 15px ;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .item-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .item-details {
+            padding-left: 30px;
+            flex-grow: 1;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .action-button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .remove-btn {
+            padding: 5px 15px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .total-section{
+            width: 250px;
+            height: 200px;
+            background-color: #ddd;
+            text-align: center;
+        }
+        
+        
+        
+        
+        
+        .notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a7eba7; /* Màu nền cho thông báo (có thể tùy chỉnh) */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    z-index: 1000; /* Đảm bảo nằm trên mọi thành phần khác */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo đổ bóng */
+    transition: opacity 0.5s ease; /* Hiệu ứng mờ dần */
+}
+
+.notification h3 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
