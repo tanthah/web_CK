@@ -1,0 +1,23 @@
+.footer {
+    background-color: #333; /* Màu nền tối */
+    color: #fff; /* Màu chữ trắng để dễ đọc */
+    text-align: center; /* Căn giữa toàn bộ nội dung */
+    padding: 20px 10px; /* Khoảng cách trên dưới và hai bên */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại và dễ đọc */
+    font-size: 14px; /* Cỡ chữ nhỏ nhưng dễ nhìn */
+    line-height: 1.6; /* Dòng cách thoáng để dễ đọc */
+}
+
+.footer p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+.footer a {
+    color: #ffd700; /* Màu vàng nổi bật cho liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Gạch chân khi hover để tạo hiệu ứng */
+    color: #fff; /* Thay đổi màu chữ khi hover */
+}

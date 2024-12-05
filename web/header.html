@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/body.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/order.css" type="text/css"/>
+    <script>
+        window.onload = function() {
+            const scrollTo = '${scrollTo}';
+            if (scrollTo) {
+                const element = document.getElementById(scrollTo);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+        
+        // Khi trang tải xong, thiết lập timeout để ẩn thông báo
+        document.addEventListener("DOMContentLoaded", function () {
+            const notification = document.getElementById("notification");
+            if (notification) {
+                // Hiển thị thông báo trong 3 giây
+                setTimeout(() => {
+                    notification.style.opacity = "0"; // Tạo hiệu ứng mờ dần
+                    setTimeout(() => notification.style.display = "none", 500); // Sau đó ẩn hoàn toàn
+                }, 3000);
+            }
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <div class="header_image">
+            <img src="images/logo.png" class="header_container_logo" alt="logo"/>
+        </div>
+        <div class="navbar">
+            <ul class="navbar_item">
+                <li class="navbar_item_2">
+                    <form action="navigate" method="get">
+                        <input type="hidden" name="section" value="home">
+                        <div class="button_log_in">
+                            <input type="submit" value="Home" >
+                        </div>
+                    </form>
+                </li>
+                <li class="navbar_item_2">
+                    <form action="order" method="post">
+                        <input type="hidden" name="action" value="order_page">
+                        <div class="button_log_in">
+                            <input type="submit" value="Dish">
+                        </div>
+                    </form>
+                <!--    <ul class="navbar_item_2_menu">
+                        <li><a href="vidu.jsp">mon trang mieng</a></li>
+                        <li><a href="vidu.jsp">mon khai vi</a></li>
+                        <li><a href="vidu.jsp">mon trang mieng</a></li>
+                    </ul>-->
+                </li>
+                <li class="navbar_item_3">
+                    <form action="navigate" method="get">
+                        <input type="hidden" name="section" value="about">
+                        <div class="button_log_in">
+                            <input type="submit" value="About Us" class="nav-button">
+                        </div>
+                    </form>
+                </li>
+                <li class="navbar_item_2">
+                    <form action="cart" method="get">
+                        <input type="hidden" name="action" value="view_cart">
+                        <div class="button_log_in">
+                            <input type="submit" value="Shopping Cart">
+                        </div>
+                    </form>
+                </li>
+                <li class="navbar_item_3">
+                    <a href="#contact" class="button">Contact</a>
+                </li>
+                <li class="navbar_item_4">
+                    <form action="login" method="post">
+                        <input type="hidden" name="action" value="login_page">
+                        <div class="button_log_in">
+                            <input type="submit" value="Log in">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

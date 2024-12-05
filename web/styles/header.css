@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Times New Roman;
+}
+
+body{
+    align-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    z-index: 100; /* Đảm bảo header nằm trên các phần tử khác */
+    background-color: transparent; /* Nền trong suốt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Tạo bóng để phân cách header với nội dung bên dưới */
+    
+
+}
+
+.header_container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(3px);
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center
+}
+
+.header_container_logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar{
+    width: 600px;
+    height: 80px;
+  
+}
+
+.navbar_item{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    list-style: none; /* Xóa dấu chấm */
+    padding: 20px; /* Loại bỏ khoảng cách mặc định */
+    margin: 0;
+
+}
+
+.navbar_item_1{
+   
+}
+
+/* Đặt style cơ bản cho danh sách và liên kết */
+.navbar_item_2 {
+    position: relative;
+}
+
+.button {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Đổi màu nền của button khi di chuột vào */
+.button:hover {
+    background-color: #ffcc00; /* Đổi màu thành màu mong muốn */
+}
+
+/* Ẩn danh sách con ban đầu */
+.navbar_item_2_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    font-size: 13px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    list-style: none;
+}
+
+/* Hiển thị danh sách con khi di chuột vào button */
+.navbar_item_2:hover .navbar_item_2_menu {
+    display: block;
+}
+
+.navbar_item_2_menu li a {
+    display: block;
+    padding: 8px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar_item_2_menu li a:hover {
+    background-color: #e0e0e0; /* Đổi màu của các <li> khi di chuột vào */
+}
+
+.button_log_in, .button_nav{
+    display: flex; /* Để căn giữa dễ dàng */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 0;
+}
+
+.button_log_in [type="submit"] {
+    background-color: transparent;
+    font-size: 16px; /* Cỡ chữ */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border: none; /* Xóa đường viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.button_log_in input[type="submit"]:hover {
+    background-color: #ffcc00; /* Màu khi hover */
+}
+
+
+
+
+
+
+
